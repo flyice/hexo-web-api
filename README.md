@@ -1,1 +1,1 @@
-# hexo-web-api
+# A hexo web api for hexo app.
