@@ -1,5 +1,5 @@
 const _ = require('lodash')
-const app = require('hexo-web-api/lib/app')
+const app = require('./lib/app')
 const bcrypt = require('bcrypt')
 
 hexo.config.web_api = _.assign({

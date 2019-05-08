@@ -11,6 +11,7 @@
   "dependencies": {
     "bcrypt": "^3.0.6",
     "express": "^4.16.4",
+    "hexo-fs": "^1.0.2",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.11",
     "passport": "^0.4.0",
