@@ -121,8 +121,8 @@ describe('API', function () {
             })
         })
 
-        it('should return a post if published is true', function (done) {
-            chai.request(app).get('/posts/test').query({
+        it('should return a post', function (done) {
+            chai.request(app).get('/posts/post/test').query({
                 published: true
             }).set(authorizationHeader).end(function (err, res) {
                 expect(res).to.have.status(200)
@@ -135,8 +135,8 @@ describe('API', function () {
             })
         })
 
-        it('should return a draft if published is false', function (done) {
-            chai.request(app).get('/posts/test').query({
+        it('should return a draft', function (done) {
+            chai.request(app).get('/posts/draft/test').query({
                 published: false
             }).set(authorizationHeader).end(function (err, res) {
                 expect(res).to.have.status(200)
